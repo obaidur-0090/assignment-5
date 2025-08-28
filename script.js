@@ -87,8 +87,8 @@ clearBtn.addEventListener("click", function () {
 
     const histories = historyContainer.querySelectorAll(".mt-2");
     histories.forEach((item, index) => {
-        if (index > 0) {
-            item.remove();
-        }
+            for( const itemRemove of histories){
+                itemRemove.remove();
+            }
     });
 });
