@@ -59,14 +59,14 @@ for (const callBtns of callBtn) {
             coinCount.innerText= cointCountElement;
 
             const historyDiv = document.createElement("div");
-            historyDiv.classList.add("mt-2", "bg-gray-300", "p-5", "rounded-2xl", "flex", "justify-between", "items-center");
+            historyDiv.classList.add("mt-2",  "bg-gray-300", "p-5", "rounded-2xl", "flex", "justify-between", "items-center");
 
             const time = new Date();
             const currentTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
             historyDiv.innerHTML = `
             <div>
-                <h1 class="font-bold">${callh1}</h1>
+                <h1 class="font-bold ">${callh1}</h1>
                 <p>${callh1Number}</p>
             </div>
             <div>
