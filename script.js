@@ -49,12 +49,12 @@ for (const callBtns of callBtn) {
         e.preventDefault();
 
         const call = callBtns.closest('.bg-white');
-        const callh1 = call.querySelector("h1").innerText;
+        const callh1 = call.querySelector("p").innerText;
         const callh1Number = call.querySelector(".h1tag").innerText;
         
         
         if (cointCountElement >= 20) {
-            alert(`${callh1} \n ${callh1Number} \n calling.....`);
+            alert(`📞calling ${callh1} ${callh1Number}....`);
             cointCountElement = cointCountElement-20;
             coinCount.innerText= cointCountElement;
 
@@ -75,13 +75,14 @@ for (const callBtns of callBtn) {
         `;
 
             historyContainer.appendChild(historyDiv);
-        } else alert("তোমার পর্যাপ্ত পরিমাণ Coin নাই")
+        } else alert("❌তোমার পর্যাপ্ত পরিমাণ Coin নাই 🥺")
 
 
 
     });
 }
 
+// history delete function 
 
 clearBtn.addEventListener("click", function () {
 
@@ -92,3 +93,15 @@ clearBtn.addEventListener("click", function () {
             }
     });
 });
+
+// responsive menu button 
+
+const showOption = document.getElementById("show-option")
+
+
+document.getElementById("menu-btn").addEventListener("click", function(e){
+    e.preventDefault();
+ 
+    showOption.classList.toggle("hidden");
+
+})
